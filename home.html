@@ -1,14 +1,77 @@
 <!doctype html>
-
-<html>
+<html lang="en">
   <head>
-    <title>INSERT TITLE HERE!</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-  </head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+    <title>A/B Testing</title>
+  </head>
   <body>
-    <!-- TODO: put your HTML code here! -->
+    <h1 class="text-center py-4">A/B Testing</h1>
+    <p class="lead text-justify w-50 mx-auto">A/B Testing is one of the cheapest ways to determine whether UI/UX changes impact your site's users. To practice this essential skill, I made two simple websites and tracked users while they completed a task: put $150 worth of cacti merchandise in their cart.</p>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="assets/col.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Interface A</h5>
+              <p class="card-text">I kept interface A unchanged from my UI/UX course's original template. This interface acted as my control for this A/B test.</p>
+              <a href="https://floating-thicket-44763.herokuapp.com/" target="_blank" class="btn btn-primary">Go to app</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img class="card-img-top" src="assets/row.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Interface B</h5>
+              <p class="card-text text-left">For interface B, I made 3 significant changes: I opted for a row layout, increased the font size of the prices, and removed the item descriptions.</p>
+              <a href="https://floating-thicket-44763.herokuapp.com/" target="_blank" class="btn btn-primary">Go to app</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-6">
+      <h2 class="py-4 text-center">Hypotheses for Time To Completion</h2>
+      <p class="lead">Null hypothesis: There is no difference between Site A’s time to completion and Site B’s time to completion.</p>
+      <p class="lead">Alternative hypothesis: Site A’s time to completion is greater than Site B’s time to completion.</p>
+    </div>
+    <div class="container col-md-6">
+      <h2 class="py-4 text-center">Hypotheses for Return Rate</h2>
+      <p class="lead">Null hypothesis: There is no difference between Site A’s return rate and Site B’s return rate.</p>
+      <p class="lead">Alternative hypothesis: Site A’s return rate is greater than Site B’s return rate.</p>
+    </div>
+    <div class="container col-md-6">
+      <h2 class="py-4 text-center">Data Collection Process</h2>
+      <p class="lead">I was able to collect my results via other students in my course. We all tested each other's sites, with the same goal of adding > $150 of merchandise to our carts.</p>
+    </div>
+    <div class="container col-md-6">
+      <h2 class="py-4 text-center">Results Infographic</h2>
+      <img src="assets/graphic.jpg" class="rounded mx-auto w-75 d-block" alt="">
+    </div>
+    <div class="container col-md-6">
+      <h2 class="py-4 text-center">Broad Takeaways</h2>
+      <p class="lead">I failed to reject the null hypothesis for either Time to Completion or Return Rate. One of the biggest limitations of this test was the small sample size of users. That required any difference to be dramatic in order to be statistically significant. My results seem to imply that layout does not have as much of an impact as I think it does. I find that notion hard to believe.</p>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
